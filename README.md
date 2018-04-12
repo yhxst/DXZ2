@@ -31,3 +31,6 @@ this is tangke's biyesheji
 
 
 #### 新增 isStore ： 改用户是否对 post已收藏。 
+
+<img src="https://github.com/yhxst/DXZ2/blob/master/img/post.jpeg" width = "40%" height = "40%" alt="图片名称" align=center />
+
