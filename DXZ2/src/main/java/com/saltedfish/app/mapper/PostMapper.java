@@ -4,10 +4,8 @@ package com.saltedfish.app.mapper;
 import com.saltedfish.app.bean.BaseBean;
 import com.saltedfish.app.bean.file.FileUrl;
 import com.saltedfish.app.bean.post.Post;
-import org.apache.ibatis.annotations.Delete;
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Select;
-import org.apache.ibatis.annotations.Update;
+import com.saltedfish.app.bean.post.PostHomeResponseDto;
+import org.apache.ibatis.annotations.*;
 
 import java.util.List;
 
@@ -58,4 +56,9 @@ public interface PostMapper extends BaseMapper{
 
     @Select(value = "select code from Post where content like CONCAT('%',#{0},'%') order by heat asc limit #{1},#{2}")
     List<String> getContentLikeHeat(String content,int star,int end);
+
+    @Select("SELECT p.id as id,p.content as content ,ui.headPhoto as headImg,u.name as name" +
+            " FROM post as p left join user u on p.userId=u.id " +
+            "left join User_Info ui on u.id=ui.userId limit #{num}")
+    List<PostHomeResponseDto> getHomePostByUser(int num);
 }
