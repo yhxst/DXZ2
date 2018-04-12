@@ -5,7 +5,7 @@ this is tangke's biyesheji
 
 ### JSON 示例
 
----javascript
+---
     {
       "post":
       [
