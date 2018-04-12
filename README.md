@@ -30,3 +30,4 @@ this is tangke's biyesheji
      }
 
 
+#### 新增 isStore ： 改用户是否对 post已收藏。 
