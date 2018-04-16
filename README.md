@@ -24,10 +24,9 @@ this is tangke's biyesheji
               "image_max_hight_px" : "1080",
               "star_sum" : "346109",
               "content_sum" : "2220"
-          }
-      
-  	  ]
-     }
+           }
+  	   ]
+    }
 
 
 #### 新增 isStore ： 改用户是否对 post已收藏。 
