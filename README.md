@@ -16,7 +16,7 @@ this is tangke's biyesheji
               "content" : "你在哪，我在杭州",
               "isStar" : "true",
               "isStroe" : "true",
-              "imageList" : 
+              "fileList" : 
                 [
                   {"image" : "http://XXXXXXX.jpg"},
                   {"image" : "http://XXXXXXX.jpg"}
